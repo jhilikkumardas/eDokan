@@ -34,15 +34,16 @@
 <link rel=apple-touch-icon href=images/favicon.webp>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sacramento&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sacramento&display=swap" media="print" onload="this.media='all'" />
 <noscript>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sacramento&display=swap" />
 </noscript>
-<link rel=preload as=image href=images/hero-person.webp fetchpriority=high>
-<link rel=preload as=image href=images/hero-laptop-phone.webp fetchpriority=high>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sacramento&display=swap" rel=stylesheet>
-<link rel=stylesheet href=styles.css>
+<link rel="preload" as="image" href="images/hero-person.webp" fetchpriority="high">
+<link rel="preload" as="image" href="images/hero-laptop-phone.webp" fetchpriority="high">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sacramento&display=swap" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sacramento&display=swap"></noscript>
+<link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="styles.css"></noscript>
 <script type=application/ld+json>
 {
     "@context": "https://schema.org",
@@ -296,16 +297,10 @@
 <body>
 <a class=skip-link href=#main>Skip to main content</a>
 <header class=site-header id=top>
-  <div class="container header-inner">
-    <a href="/">
-       <img src=images/logo-light.webp alt="edokan.in — Jhilik Kumar Das" width=140 height=44>
-    </a>
-    
-    <nav class=primary-nav aria-label=Primary>
-      </nav>
-    ...
-  </div>
-</header>
+<div class="container header-inner">
+<a href="#home">
+<img src=images/logo-light.webp alt="edokan.in — Jhilik Kumar Das" width=140 height=44>
+</a>
 <nav class=primary-nav aria-label=Primary>
 <ul>
 <li><a href=#home class="nav-link active">Home</a></li>
